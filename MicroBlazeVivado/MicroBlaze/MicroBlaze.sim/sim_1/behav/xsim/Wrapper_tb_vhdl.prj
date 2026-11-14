@@ -1,0 +1,32 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../MicroBlaze.ip_user_files/bd/MicroBlazee/ip/MicroBlazee_microblaze_0_0/sim/MicroBlazee_microblaze_0_0.vhd" \
+"../../../../MicroBlaze.ip_user_files/bd/MicroBlazee/ip/MicroBlazee_dlmb_v10_0/sim/MicroBlazee_dlmb_v10_0.vhd" \
+"../../../../MicroBlaze.ip_user_files/bd/MicroBlazee/ip/MicroBlazee_ilmb_v10_0/sim/MicroBlazee_ilmb_v10_0.vhd" \
+"../../../../MicroBlaze.ip_user_files/bd/MicroBlazee/ip/MicroBlazee_dlmb_bram_if_cntlr_0/sim/MicroBlazee_dlmb_bram_if_cntlr_0.vhd" \
+"../../../../MicroBlaze.ip_user_files/bd/MicroBlazee/ip/MicroBlazee_ilmb_bram_if_cntlr_0/sim/MicroBlazee_ilmb_bram_if_cntlr_0.vhd" \
+"../../../../MicroBlaze.ip_user_files/bd/MicroBlazee/ip/MicroBlazee_mdm_1_0/sim/MicroBlazee_mdm_1_0.vhd" \
+"../../../../MicroBlaze.ip_user_files/bd/MicroBlazee/ip/MicroBlazee_rst_clk_wiz_1_100M_0/sim/MicroBlazee_rst_clk_wiz_1_100M_0.vhd" \
+"../../../../MicroBlaze.ip_user_files/bd/MicroBlazee/ip/MicroBlazee_axi_gpio_0_0/sim/MicroBlazee_axi_gpio_0_0.vhd" \
+"../../../../MicroBlaze.ip_user_files/bd/MicroBlazee/sim/MicroBlazee.vhd" \
+"../../../../MicroBlaze.ip_user_files/bd/MicroBlazee/ip/MicroBlazee_axi_gpio_1_0/sim/MicroBlazee_axi_gpio_1_0.vhd" \
+"../../../../MicroBlaze.ip_user_files/bd/MicroBlazee/ip/MicroBlazee_axi_gpio_2_0/sim/MicroBlazee_axi_gpio_2_0.vhd" \
+"../../../../MicroBlaze.ip_user_files/bd/MicroBlazee/ip/MicroBlazee_axi_gpio_3_0/sim/MicroBlazee_axi_gpio_3_0.vhd" \
+"../../../../MicroBlaze.ip_user_files/bd/MicroBlazee/ip/MicroBlazee_axi_gpio_4_0/sim/MicroBlazee_axi_gpio_4_0.vhd" \
+"../../../../MicroBlaze.ip_user_files/bd/MicroBlazee/ip/MicroBlazee_axi_uartlite_0_0/sim/MicroBlazee_axi_uartlite_0_0.vhd" \
+"../../../../MicroBlaze.srcs/sources_1/bd/MicroBlazee/ipshared/4cdd/hdl/vhdl/inv_divisor_CTRL_BUS_s_axi.vhd" \
+"../../../../MicroBlaze.srcs/sources_1/bd/MicroBlazee/ipshared/4cdd/hdl/vhdl/inv_divisor_dmul_dEe.vhd" \
+"../../../../MicroBlaze.srcs/sources_1/bd/MicroBlazee/ipshared/4cdd/hdl/vhdl/inv_divisor_drecifYi.vhd" \
+"../../../../MicroBlaze.srcs/sources_1/bd/MicroBlazee/ipshared/4cdd/hdl/vhdl/inv_divisor_mask_bkb.vhd" \
+"../../../../MicroBlaze.srcs/sources_1/bd/MicroBlazee/ipshared/4cdd/hdl/vhdl/inv_divisor_one_hcud.vhd" \
+"../../../../MicroBlaze.srcs/sources_1/bd/MicroBlazee/ipshared/4cdd/hdl/vhdl/inv_divisor_uitodeOg.vhd" \
+"../../../../MicroBlaze.srcs/sources_1/bd/MicroBlazee/ipshared/4cdd/hdl/vhdl/inv_divisor.vhd" \
+"../../../../MicroBlaze.srcs/sources_1/bd/MicroBlazee/ipshared/4cdd/hdl/ip/inv_divisor_ap_dmul_3_max_dsp_64.vhd" \
+"../../../../MicroBlaze.srcs/sources_1/bd/MicroBlazee/ipshared/4cdd/hdl/ip/inv_divisor_ap_drecip_9_full_dsp_64.vhd" \
+"../../../../MicroBlaze.srcs/sources_1/bd/MicroBlazee/ipshared/4cdd/hdl/ip/inv_divisor_ap_uitodp_3_no_dsp_32.vhd" \
+"../../../../MicroBlaze.ip_user_files/bd/MicroBlazee/ip/MicroBlazee_inv_divisor_0_1/sim/MicroBlazee_inv_divisor_0_1.vhd" \
+"../../../../MicroBlaze.srcs/sources_1/bd/MicroBlazee/hdl/MicroBlazee_wrapper.vhd" \
+"../../../../MicroBlaze.srcs/sim_1/new/Wrapper_tb.vhd" \
+
+# Do not sort compile order
+nosort

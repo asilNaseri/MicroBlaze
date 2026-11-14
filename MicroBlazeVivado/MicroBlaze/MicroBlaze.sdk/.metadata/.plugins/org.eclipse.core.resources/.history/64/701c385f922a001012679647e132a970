@@ -1,0 +1,189 @@
+#include <stdio.h>
+#include "xparameters.h"
+#include <xil_io.h>
+#include "xuartlite.h"
+
+
+//GPIO
+#define DIVIDER_OUT XPAR_GPIO_0_BASEADDR
+#define DIVIDER_OUT_RDY XPAR_GPIO_1_BASEADDR
+#define GRAY_OUT XPAR_GPIO_2_BASEADDR
+#define GRAY_OUT_RDY XPAR_GPIO_3_BASEADDR
+#define ERROR XPAR_GPIO_4_BASEADDR
+
+//INV_DIV
+#define INVERSE_DIVISOR XPAR_INV_DIVISOR_0_S_AXI_CTRL_BUS_BASEADDR
+
+//UART
+#define UARTLITE_DEVICE_ID XPAR_AXI_UARTLITE_0_DEVICE_ID
+#define UART_BASE_ADDRESS XPAR_UARTLITE_0_BASEADDR
+
+#define HEADER 0x3b
+#define DIVIDE_COMMAND 0x00
+#define RGB_GRAY_COMM 0xff
+
+
+#define STATE_IDLE 0
+#define STATE_HEADER 1
+#define STATE_DIVIDE 2
+#define STATE_RGB 3
+#define STATE_CHECKSUML 4
+#define STATE_CHECKSUMH 5
+
+
+
+uint8_t RGB2GrayScale(uint8_t R,uint8_t G,uint8_t B)
+{
+	float Gray;
+	Gray = 0.299f * R + 0.587f * G + 0.114f * B;
+	return (uint8_t)(Gray + 0.5f);
+}
+
+XUartLite uart;
+
+int current_state = STATE_IDLE;
+int byte_count = 0;
+uint8_t checksum = 0;
+uint8_t received_data[12];
+uint8_t divisor_data[9];
+uint8_t rgb_data[3];
+
+void process_divide_command() {
+    // Prepare data for IP core (assuming 9 bytes input)
+    for(int i = 0; i < 9; i++) {
+        Xil_Out8(INVERSE_DIVISOR +24 +i*8, divisor_data[i]);
+    }
+
+    // Read result from IP core (assuming 32-bit output)
+    while (Xil_In32(INVERSE_DIVISOR) & 0x02 ); // wait for output
+    uint8_t result=Xil_In32(INVERSE_DIVISOR+16);
+
+
+    // Output the result
+    Xil_Out32(DIVIDER_OUT, result);
+    Xil_Out8(DIVIDER_OUT_RDY, 1);
+
+    // Wait a bit then clear ready signal
+    for(int i = 0; i < 1000; i++); // Simple delay
+    Xil_Out8(DIVIDER_OUT_RDY, 0);
+}
+
+void process_rgb_command() {
+    uint8_t gray = RGB2GrayScale(rgb_data[0], rgb_data[1], rgb_data[2]);
+
+    // Output the grayscale value
+    Xil_Out8(GRAY_OUT, gray);
+    Xil_Out8(GRAY_OUT_RDY, 1);
+
+    // Wait a bit then clear ready signal
+    for(int i = 0; i < 1000; i++); // Simple delay
+    Xil_Out8(GRAY_OUT_RDY, 0);
+}
+
+void reset_system() {
+    current_state = STATE_IDLE;
+    byte_count = 0;
+    checksum = 0;
+    Xil_Out8(ERROR, 0);
+}
+uint8_t dataIn;
+
+
+
+int main()
+{
+//	if (XUartLite_Initialize(&uart, UARTLITE_DEVICE_ID) != XST_SUCCESS)
+//	{
+//				return XST_FAILURE;
+//	}
+//	XUartLite_ResetFifos(&uart);
+//	XUartLite_DisableInterrupt(&uart);
+//	while(1)
+//	{
+//		Xil_Out8(ERROR, 0x1);
+//		while(XUartLite_Recv(&uart, &dataIn,1) == 0);
+//		Xil_Out8(GRAY_OUT, dataIn);
+//	}
+	uint8_t cmndType;
+	//initializing the UART
+	if (XUartLite_Initialize(&uart, UARTLITE_DEVICE_ID) != XST_SUCCESS) {
+	        Xil_Out8(ERROR, 1);
+	        return XST_FAILURE;
+	    }
+
+	    XUartLite_ResetFifos(&uart);
+	    XUartLite_DisableInterrupt(&uart);
+
+	    Xil_Out32(DIVIDER_OUT, 0);
+	    Xil_Out8(DIVIDER_OUT_RDY, 0);
+	    Xil_Out8(GRAY_OUT, 0);
+        Xil_Out8(GRAY_OUT_RDY, 0);
+        Xil_Out8(ERROR, 0);
+
+
+        while(1)
+        {
+        	uint8_t dataIn;
+
+        	while(XUartLite_Recv(&uart, &dataIn, 1) == 0);
+//        	Xil_Out8(GRAY_OUT, dataIn);
+
+        	switch(current_state)
+        	{
+        	case STATE_IDLE:
+        		if(dataIn == HEADER)
+        		{
+
+        			current_state = STATE_HEADER;
+        			byte_count = 0;
+        			checksum = HEADER;
+        		}
+        		break;
+        	case STATE_HEADER:
+        		if(dataIn == DIVIDE_COMMAND)
+        		{
+        			current_state = STATE_DIVIDE;
+        			cmndType=1;
+        			byte_count = 0;
+        		}
+        		else if (dataIn == RGB_GRAY_COMM)
+        		{
+        			current_state = STATE_RGB;
+        			cmndType=0;
+        			byte_count = 0;
+        		}
+        		else
+        		{
+        			Xil_Out8(ERROR, 1);
+        			reset_system();
+        		}
+        		break;
+        	case STATE_DIVIDE:
+        		divisor_data[byte_count++] = dataIn;
+        		if(byte_count == 9)
+        			current_state = STATE_CHECKSUM;
+        		break;
+        	case STATE_RGB:
+        		rgb_data[byte_count++] = dataIn;
+        		if(byte_count == 3)
+        			current_state = STATE_CHECKSUM;
+        		break;
+        	case STATE_CHECKSUM:
+        		if(checksum == dataIn)
+        		{
+        			if(cmndType == 1)
+        				process_divide_command();
+        			else if(cmndType == 0)
+        				process_rgb_command();
+        		}
+        		else
+        			Xil_Out8(ERROR, 1);
+        		reset_system();
+        		break;
+        	}
+        	checksum += dataIn; // Update checksum
+        }
+
+        return XST_SUCCESS;
+
+}

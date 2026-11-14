@@ -1,0 +1,5 @@
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+Block Memory Generator module Wrapper_tb.bb1.MicroBlazee_i.microblaze_0_local_memory.lmb_bram.inst.native_mem_mapped_module.blk_mem_gen_v8_4_2_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Warning: OPMODE Input Warning : The OPMODE 011XX11 with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 5265100 ps  Iteration: 10  Process: /Wrapper_tb/bb1/MicroBlazee_i/inv_divisor_0/U0/inv_divisor_dmul_dEe_U1/inv_divisor_ap_dmul_3_max_dsp_64_u/U0/i_synth/mult/OP/R_AND_R/logic/R_AND_R/dsp48_e1/dsp48e1_add/DSP48E1_ADD/DSP/prcs_opmode_drc  File: F:\vivado\Vivado\2018.3\data/vhdl/src/unisims/primitive/DSP48E1.vhd

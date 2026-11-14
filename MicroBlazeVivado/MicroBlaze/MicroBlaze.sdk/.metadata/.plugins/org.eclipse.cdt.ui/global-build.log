@@ -1,0 +1,1783 @@
+19:49:18 **** Build of project MicroProcessor_bsp ****
+make -k all 
+"Running Make include in microblaze_0/libsrc/bram_v4_2/src"
+make -C microblaze_0/libsrc/bram_v4_2/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/cpu_v2_8/src"
+make -C microblaze_0/libsrc/cpu_v2_8/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/gpio_v4_3/src"
+make -C microblaze_0/libsrc/gpio_v4_3/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/inv_divisor_v1_0/src"
+make -C microblaze_0/libsrc/inv_divisor_v1_0/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/standalone_v6_8/src"
+make -C microblaze_0/libsrc/standalone_v6_8/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/uartlite_v3_2/src"
+make -C microblaze_0/libsrc/uartlite_v3_2/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make libs in microblaze_0/libsrc/bram_v4_2/src"
+make -C microblaze_0/libsrc/bram_v4_2/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling bram"
+mb-ar: creating ../../../lib/libxil.a
+"Running Make libs in microblaze_0/libsrc/cpu_v2_8/src"
+make -C microblaze_0/libsrc/cpu_v2_8/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling cpu"
+"Running Make libs in microblaze_0/libsrc/gpio_v4_3/src"
+make -C microblaze_0/libsrc/gpio_v4_3/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling gpio"
+"Running Make libs in microblaze_0/libsrc/inv_divisor_v1_0/src"
+make -C microblaze_0/libsrc/inv_divisor_v1_0/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling inv_divisor"
+"Running Make libs in microblaze_0/libsrc/standalone_v6_8/src"
+make -C microblaze_0/libsrc/standalone_v6_8/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling standalone";
+microblaze_sleep.c:77:9: note: #pragma message: For the sleep routines, assembly instructions are used
+ #pragma message ("For the sleep routines, assembly instructions are used")
+         ^~~~~~~
+"Running Make libs in microblaze_0/libsrc/uartlite_v3_2/src"
+make -C microblaze_0/libsrc/uartlite_v3_2/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling uartlite"
+'Finished building libraries'
+19:49:26 **** Build of configuration Debug for project MicroProcessor ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../MicroProcessor_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -I../../MicroProcessor_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building target: MicroProcessor.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../MicroProcessor_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "MicroProcessor.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: MicroProcessor.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size MicroProcessor.elf  |tee "MicroProcessor.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   2712	    268	   3108	   6088	   17c8	MicroProcessor.elf
+'Finished building: MicroProcessor.elf.size'
+' '
+19:50:04 **** Clean-only build of configuration Debug for project MicroProcessor ****
+make clean 
+rm -rf  ./src/helloworld.o ./src/platform.o  ./src/helloworld.d ./src/platform.d  MicroProcessor.elf.size  MicroProcessor.elf
+' '
+19:50:04 **** Auto Build of configuration Debug for project MicroProcessor ****
+make all 
+'Building file: ../src/platform.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -I../../MicroProcessor_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building target: MicroProcessor.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../MicroProcessor_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "MicroProcessor.elf"  ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+f:/vivado/sdk/2018.3/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/7.3.1/../../../../microblaze-xilinx-elf/lib/le/crtinit.o: In function `_crtinit':
+(.text+0x78): undefined reference to `main'
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:38: MicroProcessor.elf] Error 1
+19:50:25 **** Auto Build of configuration Debug for project MicroProcessor ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../MicroProcessor_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: MicroProcessor.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../MicroProcessor_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "MicroProcessor.elf"  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+f:/vivado/sdk/2018.3/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/7.3.1/../../../../microblaze-xilinx-elf/lib/le/crtinit.o: In function `_crtinit':
+(.text+0x78): undefined reference to `main'
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:38: MicroProcessor.elf] Error 1
+19:52:56 **** Auto Build of configuration Debug for project MicroProcessor ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../MicroProcessor_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: MicroProcessor.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../MicroProcessor_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "MicroProcessor.elf"  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: MicroProcessor.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size MicroProcessor.elf  |tee "MicroProcessor.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   1952	    268	   3108	   5328	   14d0	MicroProcessor.elf
+'Finished building: MicroProcessor.elf.size'
+' '
+21:01:13 **** Clean-only build of configuration Debug for project MicroProcessor ****
+make clean 
+rm -rf  ./src/main.o ./src/platform.o  ./src/main.d ./src/platform.d  MicroProcessor.elf.size  MicroProcessor.elf
+' '
+21:01:13 **** Auto Build of configuration Debug for project MicroProcessor ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../MicroProcessor_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c:32:1: error: unknown type name 'XuartLite'; did you mean 'XUartLite'?
+ XuartLite uart;
+ ^~~~~~~~~
+ XUartLite
+../src/main.c: In function 'main':
+../src/main.c:44:6: warning: implicit declaration of function 'XuartLite_initialize'; did you mean 'XUartLite_Initialize'? [-Wimplicit-function-declaration]
+  if (XuartLite_initialize(&uart, UARTLITE_DIVICE_ID) != XST_SUCCESS)
+      ^~~~~~~~~~~~~~~~~~~~
+      XUartLite_Initialize
+../src/main.c:44:34: error: 'UARTLITE_DIVICE_ID' undeclared (first use in this function); did you mean 'UARTLITE_DEVICE_ID'?
+  if (XuartLite_initialize(&uart, UARTLITE_DIVICE_ID) != XST_SUCCESS)
+                                  ^~~~~~~~~~~~~~~~~~
+                                  UARTLITE_DEVICE_ID
+../src/main.c:44:34: note: each undeclared identifier is reported only once for each function it appears in
+../src/main.c:46:2: warning: implicit declaration of function 'XuartLite_ResetFifos'; did you mean 'XUartLite_ResetFifos'? [-Wimplicit-function-declaration]
+  XuartLite_ResetFifos(&uart);
+  ^~~~~~~~~~~~~~~~~~~~
+  XUartLite_ResetFifos
+../src/main.c:47:2: warning: implicit declaration of function 'XuartLite_DisableInterrupt'; did you mean 'XUartLite_DisableInterrupt'? [-Wimplicit-function-declaration]
+  XuartLite_DisableInterrupt(&uart);
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~
+  XUartLite_DisableInterrupt
+../src/main.c:51:9: warning: implicit declaration of function 'XuartLite_Recv'; did you mean 'XUartLite_Recv'? [-Wimplicit-function-declaration]
+   while(XuartLite_Recv(&uart, &uart_data,1) == 0)
+         ^~~~~~~~~~~~~~
+         XUartLite_Recv
+../src/main.c:51:32: error: 'uart_data' undeclared (first use in this function)
+   while(XuartLite_Recv(&uart, &uart_data,1) == 0)
+                                ^~~~~~~~~
+../src/main.c:52:13: error: 'RGB2GRAYOUT' undeclared (first use in this function); did you mean 'RGB_GRAY_COMM'?
+    Xil_Out8(RGB2GRAYOUT, &uart);
+             ^~~~~~~~~~~
+             RGB_GRAY_COMM
+../src/main.c:52:26: warning: passing argument 2 of 'Xil_Out8' makes integer from pointer without a cast [-Wint-conversion]
+    Xil_Out8(RGB2GRAYOUT, &uart);
+                          ^
+In file included from ../src/main.c:3:0:
+../../MicroProcessor_bsp/microblaze_0/include/xil_io.h:182:20: note: expected 'u8 {aka unsigned char}' but argument is of type 'int *'
+ static INLINE void Xil_Out8(UINTPTR Addr, u8 Value)
+                    ^~~~~~~~
+make: *** [src/subdir.mk:26: src/main.o] Error 1
+21:01:35 **** Auto Build of configuration Debug for project MicroProcessor ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../MicroProcessor_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c:32:1: error: unknown type name 'XuartLite'; did you mean 'XUartLite'?
+ XuartLite uart;
+ ^~~~~~~~~
+ XUartLite
+../src/main.c: In function 'main':
+../src/main.c:44:6: warning: implicit declaration of function 'XuartLite_initialize'; did you mean 'XUartLite_Initialize'? [-Wimplicit-function-declaration]
+  if (XuartLite_initialize(&uart, UARTLITE_DEVICE_ID) != XST_SUCCESS)
+      ^~~~~~~~~~~~~~~~~~~~
+      XUartLite_Initialize
+../src/main.c:46:2: warning: implicit declaration of function 'XuartLite_ResetFifos'; did you mean 'XUartLite_ResetFifos'? [-Wimplicit-function-declaration]
+  XuartLite_ResetFifos(&uart);
+  ^~~~~~~~~~~~~~~~~~~~
+  XUartLite_ResetFifos
+../src/main.c:47:2: warning: implicit declaration of function 'XuartLite_DisableInterrupt'; did you mean 'XUartLite_DisableInterrupt'? [-Wimplicit-function-declaration]
+  XuartLite_DisableInterrupt(&uart);
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~
+  XUartLite_DisableInterrupt
+../src/main.c:51:9: warning: implicit declaration of function 'XuartLite_Recv'; did you mean 'XUartLite_Recv'? [-Wimplicit-function-declaration]
+   while(XuartLite_Recv(&uart, &uart_data,1) == 0)
+         ^~~~~~~~~~~~~~
+         XUartLite_Recv
+../src/main.c:51:32: error: 'uart_data' undeclared (first use in this function)
+   while(XuartLite_Recv(&uart, &uart_data,1) == 0)
+                                ^~~~~~~~~
+../src/main.c:51:32: note: each undeclared identifier is reported only once for each function it appears in
+../src/main.c:52:13: error: 'RGB2GRAYOUT' undeclared (first use in this function); did you mean 'RGB_GRAY_COMM'?
+    Xil_Out8(RGB2GRAYOUT, &uart);
+             ^~~~~~~~~~~
+             RGB_GRAY_COMM
+../src/main.c:52:26: warning: passing argument 2 of 'Xil_Out8' makes integer from pointer without a cast [-Wint-conversion]
+    Xil_Out8(RGB2GRAYOUT, &uart);
+                          ^
+In file included from ../src/main.c:3:0:
+../../MicroProcessor_bsp/microblaze_0/include/xil_io.h:182:20: note: expected 'u8 {aka unsigned char}' but argument is of type 'int *'
+ static INLINE void Xil_Out8(UINTPTR Addr, u8 Value)
+                    ^~~~~~~~
+make: *** [src/subdir.mk:26: src/main.o] Error 1
+21:02:23 **** Auto Build of configuration Debug for project MicroProcessor ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../MicroProcessor_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c:32:1: error: unknown type name 'XuartLite'; did you mean 'XUartLite'?
+ XuartLite uart;
+ ^~~~~~~~~
+ XUartLite
+../src/main.c: In function 'main':
+../src/main.c:44:6: warning: implicit declaration of function 'XuartLite_initialize'; did you mean 'XUartLite_Initialize'? [-Wimplicit-function-declaration]
+  if (XuartLite_initialize(&uart, UARTLITE_DEVICE_ID) != XST_SUCCESS){
+      ^~~~~~~~~~~~~~~~~~~~
+      XUartLite_Initialize
+../src/main.c:46:2: warning: implicit declaration of function 'XuartLite_ResetFifos'; did you mean 'XUartLite_ResetFifos'? [-Wimplicit-function-declaration]
+  XuartLite_ResetFifos(&uart);
+  ^~~~~~~~~~~~~~~~~~~~
+  XUartLite_ResetFifos
+../src/main.c:47:2: warning: implicit declaration of function 'XuartLite_DisableInterrupt'; did you mean 'XUartLite_DisableInterrupt'? [-Wimplicit-function-declaration]
+  XuartLite_DisableInterrupt(&uart);
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~
+  XUartLite_DisableInterrupt
+../src/main.c:51:9: warning: implicit declaration of function 'XuartLite_Recv'; did you mean 'XUartLite_Recv'? [-Wimplicit-function-declaration]
+   while(XuartLite_Recv(&uart, &uart_data,1) == 0)
+         ^~~~~~~~~~~~~~
+         XUartLite_Recv
+../src/main.c:51:32: error: 'uart_data' undeclared (first use in this function)
+   while(XuartLite_Recv(&uart, &uart_data,1) == 0)
+                                ^~~~~~~~~
+../src/main.c:51:32: note: each undeclared identifier is reported only once for each function it appears in
+../src/main.c:52:13: error: 'RGB2GRAYOUT' undeclared (first use in this function); did you mean 'RGB_GRAY_COMM'?
+    Xil_Out8(RGB2GRAYOUT, &uart);
+             ^~~~~~~~~~~
+             RGB_GRAY_COMM
+../src/main.c:52:26: warning: passing argument 2 of 'Xil_Out8' makes integer from pointer without a cast [-Wint-conversion]
+    Xil_Out8(RGB2GRAYOUT, &uart);
+                          ^
+In file included from ../src/main.c:3:0:
+../../MicroProcessor_bsp/microblaze_0/include/xil_io.h:182:20: note: expected 'u8 {aka unsigned char}' but argument is of type 'int *'
+ static INLINE void Xil_Out8(UINTPTR Addr, u8 Value)
+                    ^~~~~~~~
+make: *** [src/subdir.mk:26: src/main.o] Error 1
+21:02:34 **** Auto Build of configuration Debug for project MicroProcessor ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../MicroProcessor_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c:32:1: error: unknown type name 'XuartLite'; did you mean 'XUartLite'?
+ XuartLite uart;
+ ^~~~~~~~~
+ XUartLite
+../src/main.c: In function 'main':
+../src/main.c:44:6: warning: implicit declaration of function 'XuartLite_initialize'; did you mean 'XUartLite_Initialize'? [-Wimplicit-function-declaration]
+  if (XuartLite_initialize(&uart, UARTLITE_DEVICE_ID) != XST_SUCCESS)
+      ^~~~~~~~~~~~~~~~~~~~
+      XUartLite_Initialize
+../src/main.c:48:2: warning: implicit declaration of function 'XuartLite_ResetFifos'; did you mean 'XUartLite_ResetFifos'? [-Wimplicit-function-declaration]
+  XuartLite_ResetFifos(&uart);
+  ^~~~~~~~~~~~~~~~~~~~
+  XUartLite_ResetFifos
+../src/main.c:49:2: warning: implicit declaration of function 'XuartLite_DisableInterrupt'; did you mean 'XUartLite_DisableInterrupt'? [-Wimplicit-function-declaration]
+  XuartLite_DisableInterrupt(&uart);
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~
+  XUartLite_DisableInterrupt
+../src/main.c:53:9: warning: implicit declaration of function 'XuartLite_Recv'; did you mean 'XUartLite_Recv'? [-Wimplicit-function-declaration]
+   while(XuartLite_Recv(&uart, &uart_data,1) == 0)
+         ^~~~~~~~~~~~~~
+         XUartLite_Recv
+../src/main.c:53:32: error: 'uart_data' undeclared (first use in this function)
+   while(XuartLite_Recv(&uart, &uart_data,1) == 0)
+                                ^~~~~~~~~
+../src/main.c:53:32: note: each undeclared identifier is reported only once for each function it appears in
+../src/main.c:54:13: error: 'RGB2GRAYOUT' undeclared (first use in this function); did you mean 'RGB_GRAY_COMM'?
+    Xil_Out8(RGB2GRAYOUT, &uart);
+             ^~~~~~~~~~~
+             RGB_GRAY_COMM
+../src/main.c:54:26: warning: passing argument 2 of 'Xil_Out8' makes integer from pointer without a cast [-Wint-conversion]
+    Xil_Out8(RGB2GRAYOUT, &uart);
+                          ^
+In file included from ../src/main.c:3:0:
+../../MicroProcessor_bsp/microblaze_0/include/xil_io.h:182:20: note: expected 'u8 {aka unsigned char}' but argument is of type 'int *'
+ static INLINE void Xil_Out8(UINTPTR Addr, u8 Value)
+                    ^~~~~~~~
+make: *** [src/subdir.mk:26: src/main.o] Error 1
+21:03:02 **** Auto Build of configuration Debug for project MicroProcessor ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../MicroProcessor_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:44:6: warning: implicit declaration of function 'XuartLite_initialize'; did you mean 'XUartLite_Initialize'? [-Wimplicit-function-declaration]
+  if (XuartLite_initialize(&uart, UARTLITE_DEVICE_ID) != XST_SUCCESS)
+      ^~~~~~~~~~~~~~~~~~~~
+      XUartLite_Initialize
+../src/main.c:48:2: warning: implicit declaration of function 'XuartLite_ResetFifos'; did you mean 'XUartLite_ResetFifos'? [-Wimplicit-function-declaration]
+  XuartLite_ResetFifos(&uart);
+  ^~~~~~~~~~~~~~~~~~~~
+  XUartLite_ResetFifos
+../src/main.c:49:2: warning: implicit declaration of function 'XuartLite_DisableInterrupt'; did you mean 'XUartLite_DisableInterrupt'? [-Wimplicit-function-declaration]
+  XuartLite_DisableInterrupt(&uart);
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~
+  XUartLite_DisableInterrupt
+../src/main.c:53:9: warning: implicit declaration of function 'XuartLite_Recv'; did you mean 'XUartLite_Recv'? [-Wimplicit-function-declaration]
+   while(XuartLite_Recv(&uart, &uart_data,1) == 0)
+         ^~~~~~~~~~~~~~
+         XUartLite_Recv
+../src/main.c:53:32: error: 'uart_data' undeclared (first use in this function)
+   while(XuartLite_Recv(&uart, &uart_data,1) == 0)
+                                ^~~~~~~~~
+../src/main.c:53:32: note: each undeclared identifier is reported only once for each function it appears in
+../src/main.c:54:13: error: 'RGB2GRAYOUT' undeclared (first use in this function); did you mean 'RGB_GRAY_COMM'?
+    Xil_Out8(RGB2GRAYOUT, &uart);
+             ^~~~~~~~~~~
+             RGB_GRAY_COMM
+../src/main.c:54:26: warning: passing argument 2 of 'Xil_Out8' makes integer from pointer without a cast [-Wint-conversion]
+    Xil_Out8(RGB2GRAYOUT, &uart);
+                          ^
+In file included from ../src/main.c:3:0:
+../../MicroProcessor_bsp/microblaze_0/include/xil_io.h:182:20: note: expected 'u8 {aka unsigned char}' but argument is of type 'XUartLite * {aka struct <anonymous> *}'
+ static INLINE void Xil_Out8(UINTPTR Addr, u8 Value)
+                    ^~~~~~~~
+make: *** [src/subdir.mk:26: src/main.o] Error 1
+21:03:25 **** Auto Build of configuration Debug for project MicroProcessor ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../MicroProcessor_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:44:6: warning: implicit declaration of function 'XUartLite_initialize'; did you mean 'XUartLite_Initialize'? [-Wimplicit-function-declaration]
+  if (XUartLite_initialize(&uart, UARTLITE_DEVICE_ID) != XST_SUCCESS)
+      ^~~~~~~~~~~~~~~~~~~~
+      XUartLite_Initialize
+../src/main.c:53:32: error: 'uart_data' undeclared (first use in this function)
+   while(XUartLite_Recv(&uart, &uart_data,1) == 0)
+                                ^~~~~~~~~
+../src/main.c:53:32: note: each undeclared identifier is reported only once for each function it appears in
+../src/main.c:54:13: error: 'RGB2GRAYOUT' undeclared (first use in this function); did you mean 'RGB_GRAY_COMM'?
+    Xil_Out8(RGB2GRAYOUT, &uart);
+             ^~~~~~~~~~~
+             RGB_GRAY_COMM
+../src/main.c:54:26: warning: passing argument 2 of 'Xil_Out8' makes integer from pointer without a cast [-Wint-conversion]
+    Xil_Out8(RGB2GRAYOUT, &uart);
+                          ^
+In file included from ../src/main.c:3:0:
+../../MicroProcessor_bsp/microblaze_0/include/xil_io.h:182:20: note: expected 'u8 {aka unsigned char}' but argument is of type 'XUartLite * {aka struct <anonymous> *}'
+ static INLINE void Xil_Out8(UINTPTR Addr, u8 Value)
+                    ^~~~~~~~
+make: *** [src/subdir.mk:26: src/main.o] Error 1
+21:03:36 **** Auto Build of configuration Debug for project MicroProcessor ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../MicroProcessor_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:53:32: error: 'uart_data' undeclared (first use in this function)
+   while(XUartLite_Recv(&uart, &uart_data,1) == 0)
+                                ^~~~~~~~~
+../src/main.c:53:32: note: each undeclared identifier is reported only once for each function it appears in
+../src/main.c:54:13: error: 'RGB2GRAYOUT' undeclared (first use in this function); did you mean 'RGB_GRAY_COMM'?
+    Xil_Out8(RGB2GRAYOUT, &uart);
+             ^~~~~~~~~~~
+             RGB_GRAY_COMM
+../src/main.c:54:26: warning: passing argument 2 of 'Xil_Out8' makes integer from pointer without a cast [-Wint-conversion]
+    Xil_Out8(RGB2GRAYOUT, &uart);
+                          ^
+In file included from ../src/main.c:3:0:
+../../MicroProcessor_bsp/microblaze_0/include/xil_io.h:182:20: note: expected 'u8 {aka unsigned char}' but argument is of type 'XUartLite * {aka struct <anonymous> *}'
+ static INLINE void Xil_Out8(UINTPTR Addr, u8 Value)
+                    ^~~~~~~~
+make: *** [src/subdir.mk:26: src/main.o] Error 1
+21:05:10 **** Auto Build of configuration Debug for project MicroProcessor ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../MicroProcessor_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:54:13: error: 'RGB2GRAYOUT' undeclared (first use in this function); did you mean 'RGB_GRAY_COMM'?
+    Xil_Out8(RGB2GRAYOUT, &uart);
+             ^~~~~~~~~~~
+             RGB_GRAY_COMM
+../src/main.c:54:13: note: each undeclared identifier is reported only once for each function it appears in
+../src/main.c:54:26: warning: passing argument 2 of 'Xil_Out8' makes integer from pointer without a cast [-Wint-conversion]
+    Xil_Out8(RGB2GRAYOUT, &uart);
+                          ^
+In file included from ../src/main.c:3:0:
+../../MicroProcessor_bsp/microblaze_0/include/xil_io.h:182:20: note: expected 'u8 {aka unsigned char}' but argument is of type 'XUartLite * {aka struct <anonymous> *}'
+ static INLINE void Xil_Out8(UINTPTR Addr, u8 Value)
+                    ^~~~~~~~
+make: *** [src/subdir.mk:26: src/main.o] Error 1
+21:06:24 **** Auto Build of configuration Debug for project MicroProcessor ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../MicroProcessor_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:53:32: error: 'dataI' undeclared (first use in this function); did you mean 'dataIn'?
+   while(XUartLite_Recv(&uart, &dataI,1) == 0)
+                                ^~~~~
+                                dataIn
+../src/main.c:53:32: note: each undeclared identifier is reported only once for each function it appears in
+../src/main.c:54:23: warning: passing argument 2 of 'Xil_Out8' makes integer from pointer without a cast [-Wint-conversion]
+    Xil_Out8(GRAY_OUT, &uart);
+                       ^
+In file included from ../src/main.c:3:0:
+../../MicroProcessor_bsp/microblaze_0/include/xil_io.h:182:20: note: expected 'u8 {aka unsigned char}' but argument is of type 'XUartLite * {aka struct <anonymous> *}'
+ static INLINE void Xil_Out8(UINTPTR Addr, u8 Value)
+                    ^~~~~~~~
+make: *** [src/subdir.mk:26: src/main.o] Error 1
+21:06:33 **** Auto Build of configuration Debug for project MicroProcessor ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../MicroProcessor_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:54:23: warning: passing argument 2 of 'Xil_Out8' makes integer from pointer without a cast [-Wint-conversion]
+    Xil_Out8(GRAY_OUT, &uart);
+                       ^
+In file included from ../src/main.c:3:0:
+../../MicroProcessor_bsp/microblaze_0/include/xil_io.h:182:20: note: expected 'u8 {aka unsigned char}' but argument is of type 'XUartLite * {aka struct <anonymous> *}'
+ static INLINE void Xil_Out8(UINTPTR Addr, u8 Value)
+                    ^~~~~~~~
+'Finished building: ../src/main.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -I../../MicroProcessor_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building target: MicroProcessor.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../MicroProcessor_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "MicroProcessor.elf"  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: MicroProcessor.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size MicroProcessor.elf  |tee "MicroProcessor.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   3748	    288	   3220	   7256	   1c58	MicroProcessor.elf
+'Finished building: MicroProcessor.elf.size'
+' '
+21:07:31 **** Auto Build of configuration Debug for project MicroProcessor ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../MicroProcessor_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: MicroProcessor.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../MicroProcessor_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "MicroProcessor.elf"  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: MicroProcessor.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size MicroProcessor.elf  |tee "MicroProcessor.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   3744	    288	   3216	   7248	   1c50	MicroProcessor.elf
+'Finished building: MicroProcessor.elf.size'
+' '
+00:45:08 **** Auto Build of configuration Debug for project MicroProcessor ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../MicroProcessor_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: MicroProcessor.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../MicroProcessor_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "MicroProcessor.elf"  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: MicroProcessor.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size MicroProcessor.elf  |tee "MicroProcessor.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   3744	    288	   3216	   7248	   1c50	MicroProcessor.elf
+'Finished building: MicroProcessor.elf.size'
+' '
+02:07:30 **** Auto Build of configuration Debug for project MicroProcessor ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../MicroProcessor_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:57:6: warning: implicit declaration of function 'XUartLine_Initialize'; did you mean 'XUartLite_Initialize'? [-Wimplicit-function-declaration]
+  if (XUartLine_Initialize(&uart,UARTLITE_DEVICE_ID) != XST_SUCCESS)
+      ^~~~~~~~~~~~~~~~~~~~
+      XUartLite_Initialize
+../src/main.c:63:2: error: unknown type name 'PacketState'
+  PacketState state = IDLE;
+  ^~~~~~~~~~~
+../src/main.c:63:22: error: 'IDLE' undeclared (first use in this function); did you mean 'FILE'?
+  PacketState state = IDLE;
+                      ^~~~
+                      FILE
+../src/main.c:63:22: note: each undeclared identifier is reported only once for each function it appears in
+../src/main.c:75:18: error: 'Header' undeclared (first use in this function)
+    if (dataIn == Header)
+                  ^~~~~~
+../src/main.c:76:13: error: 'HDR' undeclared (first use in this function)
+     state = HDR;
+             ^~~
+../src/main.c:84:13: error: 'DIVIDE' undeclared (first use in this function)
+     state = DIVIDE;
+             ^~~~~~
+../src/main.c:23:23: error: 'oxff' undeclared (first use in this function)
+ #define RGB_GRAY_COMM oxff
+                       ^
+../src/main.c:85:24: note: in expansion of macro 'RGB_GRAY_COMM'
+    else if (command == RGB_GRAY_COMM)
+                        ^~~~~~~~~~~~~
+../src/main.c:86:13: error: 'GRAYSCALE' undeclared (first use in this function)
+     state = GRAYSCALE;
+             ^~~~~~~~~
+../src/main.c:95:13: error: 'CHCKH' undeclared (first use in this function)
+     state = CHCKH;
+             ^~~~~
+make: *** [src/subdir.mk:26: src/main.o] Error 1
+02:17:01 **** Auto Build of configuration Debug for project MicroProcessor ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../MicroProcessor_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c:51:1: error: unknown type name 'packetState'; did you mean 'PacketState'?
+ packetState packet_state = IDLE;
+ ^~~~~~~~~~~
+ PacketState
+../src/main.c: In function 'main':
+../src/main.c:69:6: warning: implicit declaration of function 'XUartLine_Initialize'; did you mean 'XUartLite_Initialize'? [-Wimplicit-function-declaration]
+  if (XUartLine_Initialize(&uart,UARTLITE_DEVICE_ID) != XST_SUCCESS)
+      ^~~~~~~~~~~~~~~~~~~~
+      XUartLite_Initialize
+../src/main.c:87:18: error: 'Header' undeclared (first use in this function)
+    if (dataIn == Header)
+                  ^~~~~~
+../src/main.c:87:18: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [src/subdir.mk:26: src/main.o] Error 1
+02:17:24 **** Auto Build of configuration Debug for project MicroProcessor ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../MicroProcessor_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:69:6: warning: implicit declaration of function 'XUartLine_Initialize'; did you mean 'XUartLite_Initialize'? [-Wimplicit-function-declaration]
+  if (XUartLine_Initialize(&uart,UARTLITE_DEVICE_ID) != XST_SUCCESS)
+      ^~~~~~~~~~~~~~~~~~~~
+      XUartLite_Initialize
+../src/main.c:87:18: error: 'Header' undeclared (first use in this function)
+    if (dataIn == Header)
+                  ^~~~~~
+../src/main.c:87:18: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [src/subdir.mk:26: src/main.o] Error 1
+02:17:46 **** Auto Build of configuration Debug for project MicroProcessor ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../MicroProcessor_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:87:18: error: 'Header' undeclared (first use in this function)
+    if (dataIn == Header)
+                  ^~~~~~
+../src/main.c:87:18: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [src/subdir.mk:26: src/main.o] Error 1
+02:18:54 **** Auto Build of configuration Debug for project MicroProcessor ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../MicroProcessor_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: MicroProcessor.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../MicroProcessor_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "MicroProcessor.elf"  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: MicroProcessor.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size MicroProcessor.elf  |tee "MicroProcessor.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  10832	    288	   3216	  14336	   3800	MicroProcessor.elf
+'Finished building: MicroProcessor.elf.size'
+' '
+02:40:36 **** Auto Build of configuration Debug for project MicroProcessor ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../MicroProcessor_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'data_handler':
+../src/main.c:59:13: error: 'DIVISOROUT' undeclared (first use in this function); did you mean 'DRIVER_OUT'?
+   Xil_Out32(DIVISOROUT, DivisorOut);
+             ^~~~~~~~~~
+             DRIVER_OUT
+../src/main.c:59:13: note: each undeclared identifier is reported only once for each function it appears in
+../src/main.c:60:13: error: 'DIVISOROUTRDY' undeclared (first use in this function); did you mean 'DIVISOROUT'?
+   Xil_Out32(DIVISOROUTRDY, 0x1);
+             ^~~~~~~~~~~~~
+             DIVISOROUT
+../src/main.c:64:13: error: 'RGB2GRAYOUT' undeclared (first use in this function); did you mean 'RGB_GRAY_COMM'?
+   Xil_Out32(RGB2GRAYOUT,GrayScale);
+             ^~~~~~~~~~~
+             RGB_GRAY_COMM
+../src/main.c:65:13: error: 'RGB2GRAYOUTRDY' undeclared (first use in this function); did you mean 'RGB2GRAYOUT'?
+   Xil_Out32(RGB2GRAYOUTRDY,0x1);
+             ^~~~~~~~~~~~~~
+             RGB2GRAYOUT
+make: *** [src/subdir.mk:26: src/main.o] Error 1
+02:42:03 **** Auto Build of configuration Debug for project MicroProcessor ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../MicroProcessor_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'data_handler':
+../src/main.c:59:13: error: 'DIVISOROUT' undeclared (first use in this function); did you mean 'DIVIDER_OUT'?
+   Xil_Out32(DIVISOROUT, DivisorOut);
+             ^~~~~~~~~~
+             DIVIDER_OUT
+../src/main.c:59:13: note: each undeclared identifier is reported only once for each function it appears in
+../src/main.c:60:13: error: 'DIVISOROUTRDY' undeclared (first use in this function); did you mean 'DIVISOROUT'?
+   Xil_Out32(DIVISOROUTRDY, 0x1);
+             ^~~~~~~~~~~~~
+             DIVISOROUT
+../src/main.c:64:13: error: 'RGB2GRAYOUT' undeclared (first use in this function); did you mean 'RGB_GRAY_COMM'?
+   Xil_Out32(RGB2GRAYOUT,GrayScale);
+             ^~~~~~~~~~~
+             RGB_GRAY_COMM
+../src/main.c:65:13: error: 'RGB2GRAYOUTRDY' undeclared (first use in this function); did you mean 'RGB2GRAYOUT'?
+   Xil_Out32(RGB2GRAYOUTRDY,0x1);
+             ^~~~~~~~~~~~~~
+             RGB2GRAYOUT
+make: *** [src/subdir.mk:26: src/main.o] Error 1
+02:42:50 **** Auto Build of configuration Debug for project MicroProcessor ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../MicroProcessor_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'data_handler':
+../src/main.c:60:13: error: 'DIVISOROUTRDY' undeclared (first use in this function); did you mean 'DIVIDER_OUT_RDY'?
+   Xil_Out32(DIVISOROUTRDY, 0x1);
+             ^~~~~~~~~~~~~
+             DIVIDER_OUT_RDY
+../src/main.c:60:13: note: each undeclared identifier is reported only once for each function it appears in
+../src/main.c:64:13: error: 'RGB2GRAYOUT' undeclared (first use in this function); did you mean 'RGB_GRAY_COMM'?
+   Xil_Out32(RGB2GRAYOUT,GrayScale);
+             ^~~~~~~~~~~
+             RGB_GRAY_COMM
+../src/main.c:65:13: error: 'RGB2GRAYOUTRDY' undeclared (first use in this function); did you mean 'RGB2GRAYOUT'?
+   Xil_Out32(RGB2GRAYOUTRDY,0x1);
+             ^~~~~~~~~~~~~~
+             RGB2GRAYOUT
+make: *** [src/subdir.mk:26: src/main.o] Error 1
+02:43:06 **** Auto Build of configuration Debug for project MicroProcessor ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../MicroProcessor_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'data_handler':
+../src/main.c:64:13: error: 'RGB2GRAYOUT' undeclared (first use in this function); did you mean 'RGB_GRAY_COMM'?
+   Xil_Out32(RGB2GRAYOUT,GrayScale);
+             ^~~~~~~~~~~
+             RGB_GRAY_COMM
+../src/main.c:64:13: note: each undeclared identifier is reported only once for each function it appears in
+../src/main.c:65:13: error: 'RGB2GRAYOUTRDY' undeclared (first use in this function); did you mean 'RGB2GRAYOUT'?
+   Xil_Out32(RGB2GRAYOUTRDY,0x1);
+             ^~~~~~~~~~~~~~
+             RGB2GRAYOUT
+make: *** [src/subdir.mk:26: src/main.o] Error 1
+02:44:33 **** Auto Build of configuration Debug for project MicroProcessor ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../MicroProcessor_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: MicroProcessor.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../MicroProcessor_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "MicroProcessor.elf"  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: MicroProcessor.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size MicroProcessor.elf  |tee "MicroProcessor.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  17752	    292	   3236	  21280	   5320	MicroProcessor.elf
+'Finished building: MicroProcessor.elf.size'
+' '
+10:39:00 **** Auto Build of configuration Debug for project MicroProcessor ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../MicroProcessor_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: MicroProcessor.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../MicroProcessor_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "MicroProcessor.elf"  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: MicroProcessor.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size MicroProcessor.elf  |tee "MicroProcessor.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   6564	    292	   3224	  10080	   2760	MicroProcessor.elf
+'Finished building: MicroProcessor.elf.size'
+' '
+11:03:51 **** Auto Build of configuration Debug for project MicroProcessor ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../MicroProcessor_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: MicroProcessor.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../MicroProcessor_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "MicroProcessor.elf"  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: MicroProcessor.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size MicroProcessor.elf  |tee "MicroProcessor.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  11344	    288	   3232	  14864	   3a10	MicroProcessor.elf
+'Finished building: MicroProcessor.elf.size'
+' '
+14:34:47 **** Auto Build of configuration Debug for project MicroProcessor ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../MicroProcessor_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:100:32: error: 'dataIn' undeclared (first use in this function)
+   while(XUartLite_Recv(&uart, &dataIn,1) == 0);
+                                ^~~~~~
+../src/main.c:100:32: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [src/subdir.mk:26: src/main.o] Error 1
+14:35:29 **** Auto Build of configuration Debug for project MicroProcessor ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../MicroProcessor_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: MicroProcessor.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../MicroProcessor_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "MicroProcessor.elf"  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: MicroProcessor.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size MicroProcessor.elf  |tee "MicroProcessor.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   3744	    288	   3224	   7256	   1c58	MicroProcessor.elf
+'Finished building: MicroProcessor.elf.size'
+' '
+14:43:16 **** Auto Build of configuration Debug for project MicroProcessor ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../MicroProcessor_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: MicroProcessor.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../MicroProcessor_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "MicroProcessor.elf"  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: MicroProcessor.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size MicroProcessor.elf  |tee "MicroProcessor.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  11344	    288	   3232	  14864	   3a10	MicroProcessor.elf
+'Finished building: MicroProcessor.elf.size'
+' '
+16:04:49 **** Auto Build of configuration Debug for project MicroProcessor ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../MicroProcessor_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:103:2: error: unknown type name 'unit8_t'; did you mean 'uint8_t'?
+  unit8_t cmndType;
+  ^~~~~~~
+  uint8_t
+../src/main.c:103:10: warning: unused variable 'cmndType' [-Wunused-variable]
+  unit8_t cmndType;
+          ^~~~~~~~
+make: *** [src/subdir.mk:26: src/main.o] Error 1
+16:04:58 **** Auto Build of configuration Debug for project MicroProcessor ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../MicroProcessor_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:103:10: warning: unused variable 'cmndType' [-Wunused-variable]
+  uint8_t cmndType;
+          ^~~~~~~~
+'Finished building: ../src/main.c'
+' '
+'Building target: MicroProcessor.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../MicroProcessor_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "MicroProcessor.elf"  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: MicroProcessor.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size MicroProcessor.elf  |tee "MicroProcessor.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  11344	    288	   3232	  14864	   3a10	MicroProcessor.elf
+'Finished building: MicroProcessor.elf.size'
+' '
+16:07:47 **** Auto Build of configuration Debug for project MicroProcessor ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../MicroProcessor_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:170:15: error: 'cmndtype' undeclared (first use in this function); did you mean 'cmndType'?
+            if(cmndtype == 1)
+               ^~~~~~~~
+               cmndType
+../src/main.c:170:15: note: each undeclared identifier is reported only once for each function it appears in
+../src/main.c:103:10: warning: variable 'cmndType' set but not used [-Wunused-but-set-variable]
+  uint8_t cmndType;
+          ^~~~~~~~
+make: *** [src/subdir.mk:26: src/main.o] Error 1
+16:08:20 **** Auto Build of configuration Debug for project MicroProcessor ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../MicroProcessor_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:172:20: error: 'cmndtype' undeclared (first use in this function); did you mean 'cmndType'?
+            else if(cmndtype == 0)
+                    ^~~~~~~~
+                    cmndType
+../src/main.c:172:20: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [src/subdir.mk:26: src/main.o] Error 1
+16:08:25 **** Auto Build of configuration Debug for project MicroProcessor ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../MicroProcessor_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: MicroProcessor.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../MicroProcessor_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "MicroProcessor.elf"  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: MicroProcessor.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size MicroProcessor.elf  |tee "MicroProcessor.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  11344	    288	   3232	  14864	   3a10	MicroProcessor.elf
+'Finished building: MicroProcessor.elf.size'
+' '
+16:35:37 **** Auto Build of configuration Debug for project MicroProcessor ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../MicroProcessor_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'process_divide_command':
+../src/main.c:57:5: error: 'result' undeclared (first use in this function)
+     result=Xil_In32(INVERSE_DIVISOR+16);
+     ^~~~~~
+../src/main.c:57:5: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [src/subdir.mk:26: src/main.o] Error 1
+16:36:01 **** Auto Build of configuration Debug for project MicroProcessor ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../MicroProcessor_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'process_divide_command':
+../src/main.c:61:28: error: 'result' undeclared (first use in this function)
+     Xil_Out32(DIVIDER_OUT, result);
+                            ^~~~~~
+../src/main.c:61:28: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [src/subdir.mk:26: src/main.o] Error 1
+16:36:49 **** Auto Build of configuration Debug for project MicroProcessor ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../MicroProcessor_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: MicroProcessor.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../MicroProcessor_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "MicroProcessor.elf"  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: MicroProcessor.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size MicroProcessor.elf  |tee "MicroProcessor.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  11384	    288	   3232	  14904	   3a38	MicroProcessor.elf
+'Finished building: MicroProcessor.elf.size'
+' '
+19:49:12 **** Auto Build of configuration Debug for project MicroProcessor ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../MicroProcessor_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: MicroProcessor.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../MicroProcessor_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "MicroProcessor.elf"  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: MicroProcessor.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size MicroProcessor.elf  |tee "MicroProcessor.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  11384	    288	   3232	  14904	   3a38	MicroProcessor.elf
+'Finished building: MicroProcessor.elf.size'
+' '
+19:54:10 **** Auto Build of configuration Debug for project MicroProcessor ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../MicroProcessor_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: MicroProcessor.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../MicroProcessor_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "MicroProcessor.elf"  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: MicroProcessor.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size MicroProcessor.elf  |tee "MicroProcessor.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  11384	    288	   3232	  14904	   3a38	MicroProcessor.elf
+'Finished building: MicroProcessor.elf.size'
+' '
+19:57:25 **** Auto Build of configuration Debug for project MicroProcessor ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../MicroProcessor_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: MicroProcessor.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../MicroProcessor_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "MicroProcessor.elf"  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: MicroProcessor.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size MicroProcessor.elf  |tee "MicroProcessor.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   3744	    288	   3224	   7256	   1c58	MicroProcessor.elf
+'Finished building: MicroProcessor.elf.size'
+' '
+20:00:42 **** Auto Build of configuration Debug for project MicroProcessor ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../MicroProcessor_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: MicroProcessor.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../MicroProcessor_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "MicroProcessor.elf"  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: MicroProcessor.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size MicroProcessor.elf  |tee "MicroProcessor.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   3744	    288	   3224	   7256	   1c58	MicroProcessor.elf
+'Finished building: MicroProcessor.elf.size'
+' '
+20:08:21 **** Auto Build of configuration Debug for project MicroProcessor ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../MicroProcessor_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: MicroProcessor.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../MicroProcessor_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "MicroProcessor.elf"  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: MicroProcessor.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size MicroProcessor.elf  |tee "MicroProcessor.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  11412	    288	   3236	  14936	   3a58	MicroProcessor.elf
+'Finished building: MicroProcessor.elf.size'
+' '
+20:24:02 **** Auto Build of configuration Debug for project MicroProcessor ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../MicroProcessor_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:164:28: error: 'STATE_CHECKSUM' undeclared (first use in this function); did you mean 'STATE_CHECKSUMH'?
+            current_state = STATE_CHECKSUM;
+                            ^~~~~~~~~~~~~~
+                            STATE_CHECKSUMH
+../src/main.c:164:28: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [src/subdir.mk:26: src/main.o] Error 1
+20:24:20 **** Auto Build of configuration Debug for project MicroProcessor ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../MicroProcessor_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:171:15: error: 'STATE_CHECKSUM' undeclared (first use in this function); did you mean 'STATE_CHECKSUMH'?
+          case STATE_CHECKSUM:
+               ^~~~~~~~~~~~~~
+               STATE_CHECKSUMH
+../src/main.c:171:15: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [src/subdir.mk:26: src/main.o] Error 1
+20:24:27 **** Auto Build of configuration Debug for project MicroProcessor ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../MicroProcessor_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: MicroProcessor.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../MicroProcessor_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "MicroProcessor.elf"  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: MicroProcessor.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size MicroProcessor.elf  |tee "MicroProcessor.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  11384	    288	   3232	  14904	   3a38	MicroProcessor.elf
+'Finished building: MicroProcessor.elf.size'
+' '
+20:30:30 **** Auto Build of configuration Debug for project MicroProcessor ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../MicroProcessor_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: MicroProcessor.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../MicroProcessor_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "MicroProcessor.elf"  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: MicroProcessor.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size MicroProcessor.elf  |tee "MicroProcessor.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  11556	    288	   3236	  15080	   3ae8	MicroProcessor.elf
+'Finished building: MicroProcessor.elf.size'
+' '
+20:38:18 **** Auto Build of configuration Debug for project MicroProcessor ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../MicroProcessor_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'reset_system':
+../src/main.c:88:5: error: 'ksum' undeclared (first use in this function); did you mean 'sum'?
+     ksum = 0;
+     ^~~~
+     sum
+../src/main.c:88:5: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [src/subdir.mk:26: src/main.o] Error 1
+20:38:27 **** Auto Build of configuration Debug for project MicroProcessor ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../MicroProcessor_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: MicroProcessor.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../MicroProcessor_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "MicroProcessor.elf"  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: MicroProcessor.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size MicroProcessor.elf  |tee "MicroProcessor.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  11600	    288	   3232	  15120	   3b10	MicroProcessor.elf
+'Finished building: MicroProcessor.elf.size'
+' '
+20:39:47 **** Auto Build of configuration Debug for project MicroProcessor ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../MicroProcessor_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: MicroProcessor.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../MicroProcessor_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "MicroProcessor.elf"  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: MicroProcessor.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size MicroProcessor.elf  |tee "MicroProcessor.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  11588	    288	   3236	  15112	   3b08	MicroProcessor.elf
+'Finished building: MicroProcessor.elf.size'
+' '
+20:43:08 **** Auto Build of configuration Debug for project MicroProcessor ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../MicroProcessor_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: MicroProcessor.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../MicroProcessor_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "MicroProcessor.elf"  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: MicroProcessor.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size MicroProcessor.elf  |tee "MicroProcessor.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  11616	    288	   3232	  15136	   3b20	MicroProcessor.elf
+'Finished building: MicroProcessor.elf.size'
+' '
+20:45:53 **** Auto Build of configuration Debug for project MicroProcessor ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../MicroProcessor_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: MicroProcessor.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../MicroProcessor_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "MicroProcessor.elf"  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: MicroProcessor.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size MicroProcessor.elf  |tee "MicroProcessor.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  11644	    288	   3236	  15168	   3b40	MicroProcessor.elf
+'Finished building: MicroProcessor.elf.size'
+' '
+20:46:02 **** Auto Build of configuration Debug for project MicroProcessor ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../MicroProcessor_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: MicroProcessor.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../MicroProcessor_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "MicroProcessor.elf"  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: MicroProcessor.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size MicroProcessor.elf  |tee "MicroProcessor.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  11672	    288	   3232	  15192	   3b58	MicroProcessor.elf
+'Finished building: MicroProcessor.elf.size'
+' '
+20:46:38 **** Auto Build of configuration Debug for project MicroProcessor ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../MicroProcessor_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: MicroProcessor.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../MicroProcessor_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "MicroProcessor.elf"  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: MicroProcessor.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size MicroProcessor.elf  |tee "MicroProcessor.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  11672	    288	   3232	  15192	   3b58	MicroProcessor.elf
+'Finished building: MicroProcessor.elf.size'
+' '
+20:47:55 **** Auto Build of configuration Debug for project MicroProcessor ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../MicroProcessor_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: MicroProcessor.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../MicroProcessor_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "MicroProcessor.elf"  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: MicroProcessor.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size MicroProcessor.elf  |tee "MicroProcessor.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  11680	    288	   3232	  15200	   3b60	MicroProcessor.elf
+'Finished building: MicroProcessor.elf.size'
+' '
+20:48:07 **** Auto Build of configuration Debug for project MicroProcessor ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../MicroProcessor_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: MicroProcessor.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../MicroProcessor_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "MicroProcessor.elf"  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: MicroProcessor.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size MicroProcessor.elf  |tee "MicroProcessor.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  11688	    288	   3232	  15208	   3b68	MicroProcessor.elf
+'Finished building: MicroProcessor.elf.size'
+' '
+20:48:55 **** Auto Build of configuration Debug for project MicroProcessor ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../MicroProcessor_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: MicroProcessor.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../MicroProcessor_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "MicroProcessor.elf"  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: MicroProcessor.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size MicroProcessor.elf  |tee "MicroProcessor.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  11716	    288	   3236	  15240	   3b88	MicroProcessor.elf
+'Finished building: MicroProcessor.elf.size'
+' '
+20:49:13 **** Auto Build of configuration Debug for project MicroProcessor ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../MicroProcessor_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: MicroProcessor.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../MicroProcessor_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "MicroProcessor.elf"  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: MicroProcessor.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size MicroProcessor.elf  |tee "MicroProcessor.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  11740	    288	   3236	  15264	   3ba0	MicroProcessor.elf
+'Finished building: MicroProcessor.elf.size'
+' '
+20:49:21 **** Auto Build of configuration Debug for project MicroProcessor ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../MicroProcessor_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: MicroProcessor.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../MicroProcessor_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "MicroProcessor.elf"  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: MicroProcessor.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size MicroProcessor.elf  |tee "MicroProcessor.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  11768	    288	   3232	  15288	   3bb8	MicroProcessor.elf
+'Finished building: MicroProcessor.elf.size'
+' '
+20:49:26 **** Auto Build of configuration Debug for project MicroProcessor ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../MicroProcessor_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: MicroProcessor.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../MicroProcessor_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "MicroProcessor.elf"  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: MicroProcessor.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size MicroProcessor.elf  |tee "MicroProcessor.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  11796	    288	   3236	  15320	   3bd8	MicroProcessor.elf
+'Finished building: MicroProcessor.elf.size'
+' '
+20:50:16 **** Auto Build of configuration Debug for project MicroProcessor ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../MicroProcessor_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: MicroProcessor.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../MicroProcessor_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "MicroProcessor.elf"  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: MicroProcessor.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size MicroProcessor.elf  |tee "MicroProcessor.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  11824	    288	   3232	  15344	   3bf0	MicroProcessor.elf
+'Finished building: MicroProcessor.elf.size'
+' '
+20:52:53 **** Auto Build of configuration Debug for project MicroProcessor ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../MicroProcessor_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: MicroProcessor.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../MicroProcessor_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "MicroProcessor.elf"  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: MicroProcessor.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size MicroProcessor.elf  |tee "MicroProcessor.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  11824	    288	   3232	  15344	   3bf0	MicroProcessor.elf
+'Finished building: MicroProcessor.elf.size'
+' '
+21:09:33 **** Auto Build of configuration Debug for project MicroProcessor ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../MicroProcessor_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: MicroProcessor.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../MicroProcessor_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "MicroProcessor.elf"  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: MicroProcessor.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size MicroProcessor.elf  |tee "MicroProcessor.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  11856	    288	   3232	  15376	   3c10	MicroProcessor.elf
+'Finished building: MicroProcessor.elf.size'
+' '
+21:15:45 **** Auto Build of configuration Debug for project MicroProcessor ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../MicroProcessor_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: MicroProcessor.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../MicroProcessor_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "MicroProcessor.elf"  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: MicroProcessor.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size MicroProcessor.elf  |tee "MicroProcessor.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  11852	    288	   3236	  15376	   3c10	MicroProcessor.elf
+'Finished building: MicroProcessor.elf.size'
+' '
+21:20:14 **** Auto Build of configuration Debug for project MicroProcessor ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../MicroProcessor_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: MicroProcessor.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../MicroProcessor_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "MicroProcessor.elf"  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: MicroProcessor.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size MicroProcessor.elf  |tee "MicroProcessor.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  11852	    288	   3236	  15376	   3c10	MicroProcessor.elf
+'Finished building: MicroProcessor.elf.size'
+' '
+21:27:15 **** Auto Build of configuration Debug for project MicroProcessor ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../MicroProcessor_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: MicroProcessor.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../MicroProcessor_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "MicroProcessor.elf"  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: MicroProcessor.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size MicroProcessor.elf  |tee "MicroProcessor.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  11876	    288	   3236	  15400	   3c28	MicroProcessor.elf
+'Finished building: MicroProcessor.elf.size'
+' '
+21:56:27 **** Auto Build of configuration Debug for project MicroProcessor ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../MicroProcessor_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: MicroProcessor.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../MicroProcessor_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "MicroProcessor.elf"  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: MicroProcessor.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size MicroProcessor.elf  |tee "MicroProcessor.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  11876	    288	   3236	  15400	   3c28	MicroProcessor.elf
+'Finished building: MicroProcessor.elf.size'
+' '
+21:56:55 **** Auto Build of configuration Debug for project MicroProcessor ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../MicroProcessor_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: MicroProcessor.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../MicroProcessor_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "MicroProcessor.elf"  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: MicroProcessor.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size MicroProcessor.elf  |tee "MicroProcessor.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  11900	    288	   3236	  15424	   3c40	MicroProcessor.elf
+'Finished building: MicroProcessor.elf.size'
+' '
+22:11:57 **** Auto Build of configuration Debug for project MicroProcessor ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../MicroProcessor_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: MicroProcessor.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../MicroProcessor_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "MicroProcessor.elf"  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: MicroProcessor.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size MicroProcessor.elf  |tee "MicroProcessor.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  11876	    288	   3236	  15400	   3c28	MicroProcessor.elf
+'Finished building: MicroProcessor.elf.size'
+' '
+22:28:32 **** Auto Build of configuration Debug for project MicroProcessor ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../MicroProcessor_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: MicroProcessor.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../MicroProcessor_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "MicroProcessor.elf"  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: MicroProcessor.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size MicroProcessor.elf  |tee "MicroProcessor.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  11844	    288	   3236	  15368	   3c08	MicroProcessor.elf
+'Finished building: MicroProcessor.elf.size'
+' '
+22:35:54 **** Auto Build of configuration Debug for project MicroProcessor ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../MicroProcessor_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: MicroProcessor.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../MicroProcessor_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "MicroProcessor.elf"  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: MicroProcessor.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size MicroProcessor.elf  |tee "MicroProcessor.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  11892	    288	   3236	  15416	   3c38	MicroProcessor.elf
+'Finished building: MicroProcessor.elf.size'
+' '
+22:44:37 **** Auto Build of configuration Debug for project MicroProcessor ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../MicroProcessor_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: MicroProcessor.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../MicroProcessor_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "MicroProcessor.elf"  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: MicroProcessor.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size MicroProcessor.elf  |tee "MicroProcessor.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  11992	    288	   3232	  15512	   3c98	MicroProcessor.elf
+'Finished building: MicroProcessor.elf.size'
+' '
+22:44:41 **** Auto Build of configuration Debug for project MicroProcessor ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../MicroProcessor_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: MicroProcessor.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../MicroProcessor_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "MicroProcessor.elf"  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: MicroProcessor.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size MicroProcessor.elf  |tee "MicroProcessor.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  11992	    288	   3232	  15512	   3c98	MicroProcessor.elf
+'Finished building: MicroProcessor.elf.size'
+' '
+22:49:09 **** Auto Build of configuration Debug for project MicroProcessor ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../MicroProcessor_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: MicroProcessor.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../MicroProcessor_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "MicroProcessor.elf"  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: MicroProcessor.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size MicroProcessor.elf  |tee "MicroProcessor.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  12052	    288	   3236	  15576	   3cd8	MicroProcessor.elf
+'Finished building: MicroProcessor.elf.size'
+' '
+22:53:53 **** Auto Build of configuration Debug for project MicroProcessor ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../MicroProcessor_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: MicroProcessor.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../MicroProcessor_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "MicroProcessor.elf"  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: MicroProcessor.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size MicroProcessor.elf  |tee "MicroProcessor.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  12088	    288	   3232	  15608	   3cf8	MicroProcessor.elf
+'Finished building: MicroProcessor.elf.size'
+' '
+22:54:36 **** Auto Build of configuration Debug for project MicroProcessor ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../MicroProcessor_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: MicroProcessor.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../MicroProcessor_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "MicroProcessor.elf"  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: MicroProcessor.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size MicroProcessor.elf  |tee "MicroProcessor.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  12112	    288	   3232	  15632	   3d10	MicroProcessor.elf
+'Finished building: MicroProcessor.elf.size'
+' '
+22:54:44 **** Auto Build of configuration Debug for project MicroProcessor ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../MicroProcessor_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: MicroProcessor.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../MicroProcessor_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "MicroProcessor.elf"  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: MicroProcessor.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size MicroProcessor.elf  |tee "MicroProcessor.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  12148	    288	   3236	  15672	   3d38	MicroProcessor.elf
+'Finished building: MicroProcessor.elf.size'
+' '
+14:44:12 **** Auto Build of configuration Debug for project MicroProcessor ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../MicroProcessor_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: MicroProcessor.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../MicroProcessor_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "MicroProcessor.elf"  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: MicroProcessor.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size MicroProcessor.elf  |tee "MicroProcessor.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  12148	    288	   3236	  15672	   3d38	MicroProcessor.elf
+'Finished building: MicroProcessor.elf.size'
+' '
+14:47:38 **** Auto Build of configuration Debug for project MicroProcessor ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../MicroProcessor_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: MicroProcessor.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../MicroProcessor_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "MicroProcessor.elf"  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: MicroProcessor.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size MicroProcessor.elf  |tee "MicroProcessor.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  12148	    288	   3236	  15672	   3d38	MicroProcessor.elf
+'Finished building: MicroProcessor.elf.size'
+' '
+14:51:27 **** Auto Build of configuration Debug for project MicroProcessor ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../MicroProcessor_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: MicroProcessor.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../MicroProcessor_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "MicroProcessor.elf"  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: MicroProcessor.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size MicroProcessor.elf  |tee "MicroProcessor.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  12148	    288	   3236	  15672	   3d38	MicroProcessor.elf
+'Finished building: MicroProcessor.elf.size'
+' '
+14:55:18 **** Auto Build of configuration Debug for project MicroProcessor ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../MicroProcessor_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: MicroProcessor.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../MicroProcessor_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "MicroProcessor.elf"  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: MicroProcessor.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size MicroProcessor.elf  |tee "MicroProcessor.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  12124	    288	   3236	  15648	   3d20	MicroProcessor.elf
+'Finished building: MicroProcessor.elf.size'
+' '
+14:55:23 **** Auto Build of configuration Debug for project MicroProcessor ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../MicroProcessor_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: MicroProcessor.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../MicroProcessor_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "MicroProcessor.elf"  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: MicroProcessor.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size MicroProcessor.elf  |tee "MicroProcessor.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  12096	    288	   3232	  15616	   3d00	MicroProcessor.elf
+'Finished building: MicroProcessor.elf.size'
+' '
+15:42:32 **** Auto Build of configuration Debug for project MicroProcessor ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../MicroProcessor_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:185:34: error: 'S' undeclared (first use in this function); did you mean '_S'?
+            else if(cmndType == 0)S
+                                  ^
+                                  _S
+../src/main.c:185:34: note: each undeclared identifier is reported only once for each function it appears in
+../src/main.c:186:13: error: expected ';' before '{' token
+             {
+             ^
+make: *** [src/subdir.mk:26: src/main.o] Error 1
+15:42:42 **** Auto Build of configuration Debug for project MicroProcessor ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../MicroProcessor_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: MicroProcessor.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../MicroProcessor_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "MicroProcessor.elf"  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: MicroProcessor.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size MicroProcessor.elf  |tee "MicroProcessor.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  11788	    288	   3236	  15312	   3bd0	MicroProcessor.elf
+'Finished building: MicroProcessor.elf.size'
+' '
+15:43:33 **** Auto Build of configuration Debug for project MicroProcessor ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../MicroProcessor_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: MicroProcessor.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../MicroProcessor_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "MicroProcessor.elf"  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: MicroProcessor.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size MicroProcessor.elf  |tee "MicroProcessor.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  11760	    288	   3232	  15280	   3bb0	MicroProcessor.elf
+'Finished building: MicroProcessor.elf.size'
+' '
+15:47:16 **** Auto Build of configuration Debug for project MicroProcessor ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../MicroProcessor_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: MicroProcessor.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../MicroProcessor_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "MicroProcessor.elf"  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: MicroProcessor.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size MicroProcessor.elf  |tee "MicroProcessor.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  11732	    288	   3236	  15256	   3b98	MicroProcessor.elf
+'Finished building: MicroProcessor.elf.size'
+' '
+15:50:47 **** Auto Build of configuration Debug for project MicroProcessor ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../MicroProcessor_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: MicroProcessor.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../MicroProcessor_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "MicroProcessor.elf"  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: MicroProcessor.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size MicroProcessor.elf  |tee "MicroProcessor.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  11732	    288	   3236	  15256	   3b98	MicroProcessor.elf
+'Finished building: MicroProcessor.elf.size'
+' '
+15:54:42 **** Auto Build of configuration Debug for project MicroProcessor ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../MicroProcessor_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: MicroProcessor.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../MicroProcessor_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "MicroProcessor.elf"  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: MicroProcessor.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size MicroProcessor.elf  |tee "MicroProcessor.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  11708	    288	   3236	  15232	   3b80	MicroProcessor.elf
+'Finished building: MicroProcessor.elf.size'
+' '
+15:54:56 **** Auto Build of configuration Debug for project MicroProcessor ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../MicroProcessor_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: MicroProcessor.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../MicroProcessor_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "MicroProcessor.elf"  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: MicroProcessor.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size MicroProcessor.elf  |tee "MicroProcessor.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  11684	    288	   3236	  15208	   3b68	MicroProcessor.elf
+'Finished building: MicroProcessor.elf.size'
+' '

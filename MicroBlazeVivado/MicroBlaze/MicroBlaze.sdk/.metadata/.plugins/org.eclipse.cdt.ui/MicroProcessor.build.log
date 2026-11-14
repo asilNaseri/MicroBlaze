@@ -1,0 +1,21 @@
+15:54:56 **** Auto Build of configuration Debug for project MicroProcessor ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../MicroProcessor_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: MicroProcessor.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../MicroProcessor_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "MicroProcessor.elf"  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: MicroProcessor.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size MicroProcessor.elf  |tee "MicroProcessor.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  11684	    288	   3236	  15208	   3b68	MicroProcessor.elf
+'Finished building: MicroProcessor.elf.size'
+' '
+
+15:54:57 Build Finished (took 534ms)
+

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="IPcore.h" path="D:\term6\FPGA\MicroBlaze\IPCore\IPcore.h"/>
+    <originFiles name="IPcore.c" path="D:\term6\FPGA\MicroBlaze\IPCore\IPcore.c"/>
+  </source>
+  <testbench>
+    <originFiles name="IPcore_tb.c" path="D:\term6\FPGA\MicroBlaze\IPCore\IPcore_tb.c"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>
